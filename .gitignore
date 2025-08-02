@@ -1,0 +1,18 @@
+# Python
+backend/venv/
+__pycache__/
+*.pyc
+
+# Node.js
+frontend/node_modules/
+frontend/build/
+
+# OS / IDE files
+.vscode/
+
+# Python environment files
+.env
+*.egg-info/
+
+# Logs
+*.log
