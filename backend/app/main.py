@@ -36,6 +36,7 @@ async def health_check():
 # Global exception handler
 @app.exception_handler(Exception)
 async def global_exception_handler(request: Request, exc: Exception):
+    """Catch all unhandled exceptions and return clean JSON"""
     return JSONResponse(
         status_code=500,
         content={"detail": f"Internal server error: {str(exc)}"}
